@@ -3,7 +3,7 @@ import "./App.css"
 import va from "./assets/ai.png"
 import { CiMicrophoneOn } from "react-icons/ci";
 import{ datacontext} from './context/UserContext';
-
+import speak from "./assets/speak.gif";
 import aigif from "./assets/aiVoice.gif";
 function App() {
  let {recognition,speaking,setSpeaking,prompt,response,
@@ -24,7 +24,7 @@ function App() {
     :
     <div className='response' >
   {!response?
-  <img src={speaking} alt="" id="speak" />
+  <img src={speak} alt="" id="speak" />
   :
   <img src={aigif} alt="" id="aigif" />}
       
