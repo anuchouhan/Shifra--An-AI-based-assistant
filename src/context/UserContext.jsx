@@ -37,7 +37,7 @@ recognition.onresult=(e)=>{
   let currentIndex=e.resultIndex
   let transcript=e.results[currentIndex][0].transcript
 setPrompt (transcript)
-takeCommand(transcript,toLowerCase())
+takeCommand(transcript.toLowerCase())
 
 }
 function takeCommand(command){
